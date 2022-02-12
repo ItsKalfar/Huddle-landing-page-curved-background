@@ -1,0 +1,28 @@
+.bgTopDesktop {
+  display: none;
+}
+
+.bgBottomDesktop {
+  display: none;
+}
+
+.bgTopMobile {
+  margin-bottom: -5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .bgTopDesktop {
+    display: block;
+  }
+
+  .bgBottomDesktop {
+    display: block;
+  }
+
+  .bgTopMobile {
+    display: none;
+  }
+  .bgBottomMobile {
+    display: none;
+  }
+}

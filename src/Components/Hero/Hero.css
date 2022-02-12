@@ -1,0 +1,78 @@
+#home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  animation: load 500ms forwards 700ms;
+  animation-fill-mode: forwards;
+  transform: translateY(0px);
+  opacity: 0;
+}
+
+#home .container img {
+  width: 100%;
+  max-width: 800px;
+  margin: 4rem auto 0rem auto;
+}
+
+.text-box h1,
+.text-box p {
+  max-width: 550px;
+}
+
+#heroImg {
+  animation: load 500ms forwards 700ms;
+  animation-fill-mode: forwards;
+  transform: translateY(0px);
+  opacity: 0;
+}
+
+.numbers .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstNo img,
+.secondNo img {
+  width: 35px;
+  margin-bottom: 0.25rem;
+}
+
+.firstNo {
+  margin-bottom: 2rem;
+}
+
+.firstNo,
+.secondNo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.numbers .container div p {
+  color: rgb(168, 168, 168);
+  font-weight: 600;
+}
+
+.numbers .container div span {
+  font-family: var(--ff-open-sans);
+  font-weight: 700;
+  color: var(--Very-Dark-Cyan);
+  font-size: 3.5rem;
+  margin-bottom: -1rem;
+}
+
+.secondNo p {
+  margin-left: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .numbers .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

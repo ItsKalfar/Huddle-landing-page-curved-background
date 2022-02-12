@@ -1,0 +1,161 @@
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Very-Pale-Blue: hsl(207, 100%, 98%);
+
+  --ff-open-sans: "Open sans", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 16px;
+  font-family: var(--ff-open-sans);
+  margin: 1rem 0;
+  font-weight: 600;
+  color: var(--Very-Dark-Cyan);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-poppins);
+  color: var(--Very-Dark-Cyan);
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--Pink);
+  max-width: 300px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+}
+
+.btn-primary:hover {
+  opacity: 0.75;
+}
+
+.btn {
+  font-family: var(--ff-poppins);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  width: 150px;
+  color: var(--Light-Pink);
+  border: 2px solid var(--Light-Pink);
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.btn-secondary:hover {
+  opacity: 0.75;
+  box-shadow: 0px 1px 5px 2px hsla(321, 100%, 78%, 0.541);
+}
+
+#contact {
+  padding: 10rem 0rem 15rem 0rem;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+form h1 {
+  text-align: center;
+}
+
+form .btn {
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: var(--Very-Dark-Cyan);
+}
+
+footer p {
+  color: #fff;
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+footer h3 {
+  color: #fff;
+  font-family: var(--ff-open-sans);
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    padding: 5rem 0rem 7rem 0rem;
+  }
+}
+
+@keyframes load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
