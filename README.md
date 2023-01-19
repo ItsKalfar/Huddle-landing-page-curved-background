@@ -1,5 +1,5 @@
 
-# Huddle Landing Landing Page
+# Huddle Landing Page
 
 ### Build The Community Your Fans Will Love
 
